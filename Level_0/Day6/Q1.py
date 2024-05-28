@@ -8,3 +8,9 @@ def solution(num_list):
         num_list.append(doubled_last_item)
 
     return num_list
+
+
+# 다른 사람 풀이
+def solution(l):
+    l.append(l[-1] - l[-2] if l[-1] > l[-2] else l[-1] * 2)
+    return l
